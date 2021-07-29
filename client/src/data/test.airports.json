@@ -1,0 +1,20 @@
+[
+    {
+        "id": "BGO",
+        "name": "Bergen Intl.",
+        "city": "Bergen",
+        "country": "Norway"
+    },
+    {
+        "id": "MSQ",
+        "name": "Minsk Intl.",
+        "city": "Minsk",
+        "country": "Belarus"
+    },
+    {
+        "id": "VNO",
+        "name": "Vnukovo Airport",
+        "city": "Moscow",
+        "country": "Russian Federation"
+    }
+]
