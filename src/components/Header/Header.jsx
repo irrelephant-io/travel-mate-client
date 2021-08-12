@@ -7,7 +7,7 @@ import { NavLink } from 'react-router-dom/cjs/react-router-dom.min';
 const Header = () => {
     return (
         <header className={s.header}>
-            <NavLink to="/search" className={s.logo}>
+            <NavLink to="/" className={s.logo}>
                 <img alt="logo" src={logo} />
             </NavLink>
             <div className={s.resetButton}>
