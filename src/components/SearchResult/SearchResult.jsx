@@ -5,7 +5,7 @@ import logo from '../../assets/images/airport_logo.png';
 
 import s from './SearchResult.module.css';
 
-const SearchResult = () => {
+const SearchResult = (props) => {
     return (
         <div className={s.result}>
             <main className={s.searchResultContainer}>
