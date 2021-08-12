@@ -28,8 +28,8 @@ jobs:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
         ECR_REPOSITORY: 'travel-mate-client'
       run: |
-        docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:pr-$PR_ID .
-        docker push $ECR_REGISTRY/$ECR_REPOSITORY:pr-$PR_ID
+        docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:latest .
+        docker push $ECR_REGISTRY/$ECR_REPOSITORY:latest
         echo "::set-output name=image::$ECR_REGISTRY/$ECR_REPOSITORY:latest"
    
     - name: Fill in the new image ID in the Amazon ECS task definition
