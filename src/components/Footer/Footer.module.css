@@ -26,3 +26,11 @@ p, a {
     font-weight: 400;
     font-family: 'HelveticaNeue','Helvetica Neue','Helvetica Neue',Helvetica,Arial,sans-serif;
 }
+
+.socialNetworkLinks span {
+    height: 1px;
+    width: 1px;
+    position: absolute;
+    overflow: hidden;
+    top: -10px;
+}

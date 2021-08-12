@@ -14,11 +14,11 @@ const Footer = () => {
                         <p>TravelMate helps You to find the best deals on airline tickets.</p>
                     </div>
                 </div>
-                <div>
-                    <a href="/" class="fa fa-facebook"></a>
-                    <a href="/" class="fa fa-twitter"></a>
-                    <a href="/" class="fa fa-youtube"></a>
-                    <a href="/" class="fa fa-instagram"></a>
+                <div className={s.socialNetworkLinks}>
+                    <a href="/" class="fa fa-facebook"><span>facebook link</span></a>
+                    <a href="/" class="fa fa-twitter"><span>twitter link</span></a>
+                    <a href="/" class="fa fa-youtube"><span>youtube link</span></a>
+                    <a href="/" class="fa fa-instagram"><span>instagram link</span></a>
                 </div>
             </div>
         </footer>
