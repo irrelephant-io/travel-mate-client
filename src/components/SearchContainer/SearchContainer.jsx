@@ -1,9 +1,7 @@
 import React from 'react';
 import AirportSelector from './AirportSelector/AirportSelector';
 
-import s from './SearchContainer.module.css';
-
-const SearchContainer = () => {
+const SearchContainer = (props) => {
     return (
         <AirportSelector />
     );

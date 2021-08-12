@@ -18,7 +18,7 @@
     align-items: center;
 }
 
-.resetButton>button {
+.resetButton > button {
     border: none;
     color: black;
     padding: 15px 32px;
@@ -26,4 +26,12 @@
     font-size: 16px;
     border-radius: 30px;
     outline: none;
+}
+
+.resetButton span {
+    height: 1px;
+    width: 1px;
+    position: absolute;
+    overflow: hidden;
+    top: -10px;
 }
