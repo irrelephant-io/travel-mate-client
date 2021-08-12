@@ -45,6 +45,6 @@ jobs:
       uses: aws-actions/amazon-ecs-deploy-task-definition@v1
       with:
         task-definition: ${{ steps.task-def.outputs.task-definition }}
-        service: 'travel-mate-client-service'
+        service: 'travel-mate'
         cluster: 'travel-mate' 
         wait-for-service-stability: true
