@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import { useDebouncedCallback } from 'use-debounce';
 import s from './AirportSelector.module.css';
 
 import useAirports from '../../../fetcher/airportFetcher';
@@ -8,7 +9,8 @@ import { NavLink } from 'react-router-dom';
 
 const AirportSelector = () => {
     const [airports, setSearchString] = useAirports();
-
+    const setSearchStringDebounced = useDebouncedCallback(setSearchString, 500);
+    
     if (airports == null) {
 	return <span>Loading...</span>;
     }
@@ -23,7 +25,7 @@ const AirportSelector = () => {
 			id="from"
 			placeholder="From?"
 			required=""
-			onChange={e => setSearchString(e.target.value)}
+			onChange={e => setSearchStringDebounced(e.target.value)}
 		    />
                     <label htmlFor="from" className={s.label}>From?</label>
                     <input type="text" className={s.input} id="to" placeholder="To?" required="" />

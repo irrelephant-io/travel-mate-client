@@ -4,12 +4,13 @@ import { useState, useEffect } from 'react';
 
 function useAirports() {
     const [airports, setAirports] = useState(null);
-    
-    useEffect(() => {
-	fetchAirports().then(setAirports);
-    }, []);
+    const [searchString, setSearchString] = useState(null);
 
-    return [airports, (_) => {}];
+    useEffect(() => {
+	fetchAirports(searchString).then(setAirports);
+    }, [searchString]);
+
+    return [airports, setSearchString];
 }
 
 function fetchAirports(searchString = null) {
@@ -17,7 +18,7 @@ function fetchAirports(searchString = null) {
         setTimeout(() => {
             const matchingAirports = searchString == null
                 ? airportsMock
-                : airportsMock.filtery(port => port.name.toLowerCase().includes(searchString));
+                : airportsMock.filter(port => port.name.toLowerCase().includes(searchString.toLowerCase()));
             res(matchingAirports)
         }
         , 1000);
