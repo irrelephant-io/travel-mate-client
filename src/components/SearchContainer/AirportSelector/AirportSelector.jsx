@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-
 import s from './AirportSelector.module.css';
 
 import airportFetcher from '../../../fetcher/airportFetcher'
