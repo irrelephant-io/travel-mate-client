@@ -11,7 +11,7 @@ const Header = () => {
                 <img alt="logo" src={logo} />
             </NavLink>
             <div className={s.resetButton}>
-                <a href="/" class="fa fa-refresh"><span>refresh button</span></a>
+                <a href="/" className="fa fa-refresh"><span>refresh button</span></a>
             </div>
         </header>
     )
