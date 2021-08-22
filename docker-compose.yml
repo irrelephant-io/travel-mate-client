@@ -1,7 +1,7 @@
-version: '3.7'
+version: '3.8'
 services:
     clientapp:
-        container_name: travelmate
+        image: travel-mate-client
         build:
             context: .
             dockerfile: Dockerfile
