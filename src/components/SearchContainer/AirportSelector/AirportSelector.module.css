@@ -31,13 +31,22 @@
 
 .airportSelectorContainer {
     margin: 0 auto;
-    width: 400px;
+    width: 100%;
+    max-width: 1190px;
     padding: 50px 10px;
 }
 
 .airportSelectorContainer>div {
     display: flex;
     flex-direction: column;
+}
+
+.airportSelectorContainer legend {
+    font-size: 60px;
+    line-height: 1;
+    margin-bottom: 60px;
+    font-weight: 400;
+    text-align: center;
 }
 
 .buttonContainer {
@@ -70,3 +79,4 @@ button:hover {
     color: black;
     border: 2px solid #555555;
 }
+
