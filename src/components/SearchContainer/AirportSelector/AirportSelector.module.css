@@ -36,12 +36,28 @@
     padding: 50px 10px;
 }
 
-.airportSelectorContainer>div {
+.airportSelectorContainer > div {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.airportSelectorContainer > div > div {
+    padding: 16px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.airportSelectorContainer fieldset{
+    border: 0 none;
 }
 
 .airportSelectorContainer legend {
+    border: none;
     font-size: 60px;
     line-height: 1;
     margin-bottom: 60px;
@@ -80,3 +96,6 @@ button:hover {
     border: 2px solid #555555;
 }
 
+.searchFrom, .searchTo {
+    flex-grow: 1;
+}

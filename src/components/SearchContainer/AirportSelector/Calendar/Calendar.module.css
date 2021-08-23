@@ -1,0 +1,99 @@
+.calendarContainer,
+.calendar,
+.calendarHeader,
+td,
+tr {
+    padding: 0;
+    margin: 0;
+}
+
+.calendarContainer {
+    border: 2px solid skyblue;
+}
+
+.calendar {
+    background-color: white;
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.calendarHeader {
+    border-bottom: 1px dashed skyblue;
+    font-size: 1.6em;
+}
+
+.calendarHeader td {
+    border-spacing: 0;
+    padding-left: 5px;
+}
+
+.day,
+.emptySlot,
+.weekDay {
+    text-align: center;
+    height: 40px;
+}
+
+.weekDay {
+    font-size: 0.8em;
+}
+
+.day {
+    font-size: 0.8em;
+}
+
+.day {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+}
+
+.currentDay {
+    background-color: #4285f4;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    border-radius: 2%;
+    color: white;
+}
+.selectedDay {
+    background-color:yellow;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    border-radius: 2%;
+    color: black;
+}
+
+.monthPopup {
+    position: absolute;
+    padding: 5px;
+    background: white;
+    border: 2px solid skyblue;
+}
+
+.monthPopup div {
+    padding: 0.3em;
+}
+
+.navMonth {
+    position: relative;
+    top: 0.1em;
+    font-size: 0.6em;
+    right:-60px;
+}
+
+.editorYear {
+    max-width: 3.6em;
+}
+
+.labelMonth,
+.labelYear {
+    font-size: 0.6em;
+}
+
+.labelMonth {
+    cursor: pointer;
+}

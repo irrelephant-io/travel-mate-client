@@ -4,6 +4,7 @@ import s from './AirportSelector.module.css';
 
 import useAirports from '../../../fetcher/airportFetcher';
 import { NavLink } from 'react-router-dom';
+import Calendar from './Calendar/Calendar';
 
 
 
@@ -37,12 +38,7 @@ const AirportSelector = () => {
                         <input type="text" className={s.input} id="to" placeholder="To?" required="" />
                         <label htmlFor="to" className={s.label}>To?</label>
                     </div>
-                    <div className={s.whenTo}>
-                        //calendar
-                    </div>
-                    <div className={s.whenFrom}>
-                    //calendar
-                    </div>
+                    <Calendar />
                     <div className={s.buttonContainer}>
                         <NavLink to="/result">
                             <button>Search</button>
