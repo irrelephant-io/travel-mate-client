@@ -25,6 +25,7 @@ RUN npm i -g runtime-env-cra@0.2.2
 
 # Copy build artifacts   
 COPY --from=build /app/build /usr/share/nginx/html
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 # Setup ENV values substitution
 COPY .env.default .env
