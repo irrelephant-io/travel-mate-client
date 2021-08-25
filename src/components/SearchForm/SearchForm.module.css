@@ -1,0 +1,23 @@
+.searchForm {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1190px;
+    padding: 50px 10px;
+}
+
+.searchForm fieldset {
+    border: 0 none;
+}
+
+.searchForm legend {
+    border: none;
+    font-size: 60px;
+    line-height: 1;
+    margin-bottom: 60px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.innerForm {
+    display: flex;
+}

@@ -1,0 +1,30 @@
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.buttonContainer > a {
+    width: 60%;
+}
+
+button {
+    width: 100%;
+    /* margin-left: 2.5rem; */
+    border-radius: 3px;
+    background-color: #555555;
+    color: white;
+    transition-duration: 0.4s;
+    padding: 15px 32px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+}
