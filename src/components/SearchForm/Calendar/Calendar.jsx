@@ -188,21 +188,16 @@ export default class Calendar extends React.Component {
             );
         }
 
-        console.log("blanks: ", blanks);
-
         let daysInMonth = [];
         for (let d = 1; d <= this.daysInMonth(); d++) {
-            let className = (d === this.currentDay() ? `${s.day} ${s.currentDay}` : `${s.day}`);
+            let className = (d == this.currentDay() ? `${s.day} ${s.currentDay}` : `${s.day}`);
             let selectedClass = (d === this.state.selectedDay ? `${s.selectedDay}` : "")
             daysInMonth.push(
-                <td key={d} className={className + selectedClass} >
+                <td key={d} className={className + ' ' + selectedClass} >
                     <span onClick={(e) => { this.onDayClick(e, d) }}>{d}</span>
                 </td>
             );
         }
-
-
-        console.log("days: ", daysInMonth);
 
         var totalSlots = [...blanks, ...daysInMonth];
         let rows = [];

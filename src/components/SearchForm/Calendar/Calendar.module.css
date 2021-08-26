@@ -40,10 +40,6 @@ tr {
 }
 
 .day {
-    font-size: 0.8em;
-}
-
-.day {
     cursor: pointer;
     width: 24px;
     height: 24px;
@@ -79,10 +75,7 @@ tr {
 }
 
 .navMonth {
-    position: relative;
-    top: 0.1em;
-    font-size: 0.6em;
-    right:-60px;
+    position: absolute;
 }
 
 .editorYear {
