@@ -8,7 +8,7 @@ import s from './SearchForm.module.css';
 
 const SearchContainer = () => {
     return (
-        <form className={s.searchForm}>
+        <form className={s.searchForm} autocomplete="off">
             <fieldset>
                 <legend>Find a flexible flight for your next trip.</legend>
             </fieldset>
