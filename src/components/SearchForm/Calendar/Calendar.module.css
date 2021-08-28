@@ -5,6 +5,7 @@ td,
 tr {
     padding: 0;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 .calendarContainer {
@@ -48,19 +49,12 @@ tr {
 
 .currentDay {
     background-color: #4285f4;
-    width: 28px;
-    height: 28px;
-    line-height: 28px;
     border-radius: 2%;
     color: white;
 }
 .selectedDay {
-    background-color:yellow;
-    width: 28px;
-    height: 28px;
-    line-height: 28px;
-    border-radius: 2%;
-    color: black;
+    font-weight: bold;
+    color: red;
 }
 
 .monthPopup {
@@ -89,4 +83,15 @@ tr {
 
 .labelMonth {
     cursor: pointer;
+}
+
+.miniCalendar {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    padding: 1rem 0.9rem;
+    border-right:1px solid #ddd;
+    background-color: rgb(255, 255, 255);
+    width: 85%;
 }

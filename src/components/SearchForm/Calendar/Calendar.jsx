@@ -9,7 +9,8 @@ export default class Calendar extends React.Component {
         today: moment(),
         showMonthPopup: false,
         showYearPopup: false,
-        selectedDay: null
+        selectedDay: null,
+        calendarShow: false
     }
 
     constructor(props) {
@@ -18,7 +19,6 @@ export default class Calendar extends React.Component {
         this.style = props.style || {};
         this.style.width = this.width; // add this
     }
-
 
     weekdays = moment.weekdays(); //["Sunday", "Monday", "Tuesday", "Wednessday", "Thursday", "Friday", "Saturday"]
     weekdaysShort = moment.weekdaysShort(); // ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
@@ -172,6 +172,12 @@ export default class Calendar extends React.Component {
         this.props.onDayClick && this.props.onDayClick(e, day);
     }
 
+    calendarShow = () => {
+        this.setState(prevState => ({
+            calendarShow: !prevState.calendarShow
+          }));
+    }
+
     render() {
         // Map the weekdays i.e Sun, Mon, Tue etc as <td>
         let weekdays = this.weekdaysShort.map((day) => {
@@ -226,37 +232,43 @@ export default class Calendar extends React.Component {
             );
         })
 
+        let showDate = this.state.selectedDay !== null ?
+            (this.state.today.format('MMMM') + ' ' + this.state.selectedDay + ', ' + this.state.today.format('YYYY')) :
+            this.state.today.format('MMMM D, YYYY'); // CHECK HOW TO RECEIVE SELECTED MONTH + SELECTED YEAR RETARD! https://momentjs.com/
+
         return (
-            <div className={s.calendarContainer} style={this.style}>
-                <table className={s.calendar}>
-                    <thead>
-                        <tr className={s.calendarHeader}>
-                            <td colSpan="5">
-                                <this.MonthNav />
-                                {" "}
-                                <this.YearNav />
-                            </td>
-                            <td colSpan="2" className={s.navMonth}>
-                                <i className="fa fa-fw fa-chevron-left"
-                                    onClick={(e) => { this.prevMonth() }}>
-                                </i>
-                                <i className="fa fa-fw fa-chevron-right"
-                                    onClick={(e) => { this.nextMonth() }}>
-                                </i>
-
-                            </td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            {weekdays}
-                        </tr>
-                        {trElements}
-                    </tbody>
-                </table>
-
+            <div>
+                <div className={s.miniCalendar} onClick={this.calendarShow}>
+                    <span>{showDate}</span>
+                </div>
+                {this.state.calendarShow && <div className={s.calendarContainer} style={this.style}>
+                    <table className={s.calendar}>
+                        <thead>
+                            <tr className={s.calendarHeader}>
+                                <td colSpan="5">
+                                    <this.MonthNav />
+                                    {" "}
+                                    <this.YearNav />
+                                </td>
+                                <td colSpan="2" className={s.navMonth}>
+                                    <i className="fa fa-fw fa-chevron-left"
+                                        onClick={(e) => { this.prevMonth() }}>
+                                    </i>
+                                    <i className="fa fa-fw fa-chevron-right"
+                                        onClick={(e) => { this.nextMonth() }}>
+                                    </i>
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                {weekdays}
+                            </tr>
+                            {trElements}
+                        </tbody>
+                    </table>
+                </div>}
             </div>
-
         );
     }
 }

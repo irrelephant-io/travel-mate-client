@@ -19,5 +19,6 @@
 }
 
 .innerForm {
-    display: flex;
+    display: grid;
+    grid-template-columns: 25% 25% 17.5% 17.5% 15%;
 }

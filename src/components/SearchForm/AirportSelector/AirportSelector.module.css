@@ -12,13 +12,13 @@
     color: #333;
     font-size: 1.2rem;
     margin: 0 auto;
-    padding: 1.5rem 2rem;
-    border-radius: 0.2rem;
+    padding: 1rem 1.25rem;
     background-color: rgb(255, 255, 255);
     border: none;
-    width: 90%;
+    border-right:1px solid #ddd;
+    width: 85%;
     display: block;
-    border-bottom: 0.3rem solid transparent;
+    /* border-bottom: 0.3rem solid transparent; */
     transition: all 0.3s;
 }
 
@@ -29,16 +29,12 @@
     transform: translateY(-4rem);
 }
 
-.searchFrom {
-    width: 400px;
-}
-
 .matchList {
     margin-top: 5px;
-    width: 300px;
     height: 150px;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 0.2rem;
     overflow: hidden;
     overflow-y: auto;
 }

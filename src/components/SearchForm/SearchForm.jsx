@@ -1,6 +1,5 @@
 import React from 'react';
-import FromSelector from './FromSelector/FromSelector';
-import ToSelector from './ToSelector/ToSelector';
+import AirportSelector from './AirportSelector/AirportSelector';
 import Calendar from './Calendar/Calendar';
 import SearchButton from './SearchButton/SearchButton';
 
@@ -13,8 +12,9 @@ const SearchContainer = () => {
                 <legend>Find a flexible flight for your next trip.</legend>
             </fieldset>
             <div className={s.innerForm}>
-                <FromSelector />
-                <ToSelector />
+                <AirportSelector placeholder="From?"/>
+                <AirportSelector placeholder="To?"/>
+                <Calendar />
                 <Calendar />
                 <SearchButton />
             </div>
