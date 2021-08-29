@@ -10,10 +10,11 @@
 }
 
 .searchForm legend {
+    font-family: 'Roboto', sans-serif;
     border: none;
-    font-size: 60px;
+    font-size: 30px;
     line-height: 1;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     font-weight: 400;
     text-align: center;
 }

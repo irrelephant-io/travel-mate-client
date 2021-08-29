@@ -15,7 +15,7 @@ function App() {
         <Route path="/arrival" component={() => <FlightSelector btnText="Search" btnNavLink="/result" placeholder="To?" />} />
         <Route path="/result" component={SearchResult} />
         <Route path="/terms" component={TermsAndConditions} />
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </BrowserRouter>
   )

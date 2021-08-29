@@ -9,7 +9,7 @@ tr {
 }
 
 .calendarContainer {
-    border: 2px solid skyblue;
+    border: 2px solid black;
 }
 
 .calendar {
@@ -20,7 +20,7 @@ tr {
 }
 
 .calendarHeader {
-    border-bottom: 1px dashed skyblue;
+    border-bottom: 1px dashed black;
     font-size: 1.6em;
 }
 
@@ -61,7 +61,7 @@ tr {
     position: absolute;
     padding: 5px;
     background: white;
-    border: 2px solid skyblue;
+    border: 2px solid black;
 }
 
 .monthPopup div {
