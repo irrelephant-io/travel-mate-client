@@ -2,11 +2,11 @@ import React from 'react';
 import s from './SearchButton.module.css';
 import { NavLink } from 'react-router-dom';
 
-const SearchButton = () => {
+const SearchButton = (props) => {
     return (
         <div className={s.buttonContainer}>
-            <NavLink to="/result">
-                <button>Search</button>
+            <NavLink to={props.btnNavLink}>
+                <button>{props.btnText}</button>
             </NavLink>
         </div>
     )

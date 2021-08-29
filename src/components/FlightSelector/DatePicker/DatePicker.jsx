@@ -1,9 +1,9 @@
 import React from 'react';
 import moment from 'moment';
 
-import s from './Calendar.module.css';
+import s from './DatePicker.module.css';
 
-export default class Calendar extends React.Component {
+export default class DatePicker extends React.Component {
     state = {
         dateContext: moment(),
         today: moment(),

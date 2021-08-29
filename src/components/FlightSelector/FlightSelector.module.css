@@ -20,5 +20,6 @@
 
 .innerForm {
     display: grid;
-    grid-template-columns: 25% 25% 17.5% 17.5% 15%;
+    grid-template-columns: 25% 17.5% 15%;
+    justify-content: center;
 }
