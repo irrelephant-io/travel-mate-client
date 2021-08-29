@@ -12,7 +12,7 @@ function App() {
       <div className="app-wrapper">
         <Header />
         <Route exact path="/" component={() => <FlightSelector btnText="Next" btnNavLink="/arrival" placeholder="From?" />} />
-        <Route path="/arrival" component={() => <FlightSelector btnText="Search" btnNavLink="/optimizations" placeholder="To?" />} />
+        <Route path="/arrival" component={() => <FlightSelector btnText="Search" btnNavLink="/result" placeholder="To?" />} />
         <Route path="/result" component={SearchResult} />
         <Route path="/terms" component={TermsAndConditions} />
         {/* <Footer /> */}
