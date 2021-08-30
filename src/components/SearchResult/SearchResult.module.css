@@ -50,3 +50,14 @@
     width: 500px;
     height: 450px;
 }
+
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loader span {
+    color: black;
+}

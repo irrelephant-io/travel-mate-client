@@ -15,10 +15,10 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className={s.socialNetworkLinks}>
-                    <a href="/" class="fa fa-facebook"><span>facebook link</span></a>
-                    <a href="/" class="fa fa-twitter"><span>twitter link</span></a>
-                    <a href="/" class="fa fa-youtube"><span>youtube link</span></a>
-                    <a href="/" class="fa fa-instagram"><span>instagram link</span></a>
+                    <a href="/" className="fa fa-facebook"><span>facebook link</span></a>
+                    <a href="/" className="fa fa-twitter"><span>twitter link</span></a>
+                    <a href="/" className="fa fa-youtube"><span>youtube link</span></a>
+                    <a href="/" className="fa fa-instagram"><span>instagram link</span></a>
                 </div>
             </div>
         </footer>
