@@ -8,6 +8,15 @@
       "name": "travel-mate-client",
       "cpu": 1,
       "image": "885729917217.dkr.ecr.eu-north-1.amazonaws.com/travel-mate-client:latest",
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "secretOptions": null,
+        "options": {
+          "awslogs-group": "/ecs/travel-mate-client",
+          "awslogs-region": "eu-north-1",
+          "awslogs-stream-prefix": "ecs"
+        }
+      },
       "portMappings": [
         {
           "hostPort": 8079,
@@ -17,7 +26,7 @@
       ],
       "environment": [
         {
-          "name": "API_URL",
+          "name": "API_URI",
           "value": "https://travelmate.irrelephant.io"
         },
         {
