@@ -61,7 +61,7 @@
   "placementConstraints": [],
   "memory": "512",
   "taskRoleArn": null,
-  "family": "travel-mate-client-task",
+  "family": "travel-mate-client",
   "pidMode": null,
   "requiresCompatibilities": [
     "EC2"
