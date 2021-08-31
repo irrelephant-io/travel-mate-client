@@ -6,7 +6,7 @@
       "essential": true,
       "memory": 512,
       "name": "travel-mate-client",
-      "cpu": 1,
+      "cpu": 1024,
       "image": "885729917217.dkr.ecr.eu-north-1.amazonaws.com/travel-mate-client:latest",
       "logConfiguration": {
         "logDriver": "awslogs",
