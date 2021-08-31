@@ -31,4 +31,5 @@ COPY nginx.conf /etc/nginx/conf.d/default.conf
 COPY .env.default .env
 
 # Substitute vars and run
+EXPOSE 8079
 CMD ["/bin/sh", "-c", "runtime-env-cra --config-name=\"/usr/share/nginx/html/runtime-env.js\" && nginx -g \"daemon off;\""]
