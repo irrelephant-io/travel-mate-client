@@ -4,7 +4,7 @@ services:
         image: travel-mate-client
         build:
             context: .
-            dockerfile: Dockerfile
+            dockerfile: pr.Dockerfile
         volumes:
          - '.:/app'
          - '/app/node_modules'
