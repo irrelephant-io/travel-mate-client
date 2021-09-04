@@ -12,6 +12,9 @@ const Header = () => {
             </NavLink>
             <div className={s.resetButton}>
                 <a href="/" className="fa fa-refresh"><span>refresh button</span></a>
+                <NavLink to="/login">
+                    <p>Sign up</p>
+                </NavLink>
             </div>
         </header>
     )
